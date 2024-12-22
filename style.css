@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .maindiv{
+    @apply col-span-12 md:col-span-4 py-[2rem] px-[1.5rem] bg-second border-[.2rem] border-solid border-second rounded-[1rem] hover:border-[green] hover:transform hover:scale-[1.02]
+  }
+
+  .icondiv{
+    @apply flex justify-between items-center mb-2
+  }
+
+  .ancor{
+    @apply inline-flex bg-white rounded-[50%] p-[.2rem] hover:transform hover:rotate-[-50deg] transition-all delay-150
+  }
+  .btn{
+    @apply w-[100%] h-[3rem] bg-second border-[.1rem] border-solid border-second text-[1rem] text-white mb-5 rounded-[.5rem] cursor-pointer
+  }
+  .hide{
+    @apply hidden
+  }
+  .actived{
+    @apply block
+  }
+  .portfolio-detail{
+    @apply hidden
+  }
+  .portfolio-active{
+    @apply block
+  }
+  .heads{
+    @apply text-[1.75rem] mt-[.4rem] mx-0 mb-[1rem]
+  }
+  .para{
+    @apply text-[.9rem]
+  }
+  .tech{
+    @apply my-[1rem] text-green border-b-[.05rem] border-solid border-b-white pb-[.25rem]
+  }
+  .picon{
+    @apply relative inline-block p-[.65rem] text-[1.5rem] text-white rounded-full bg-second
+  }
+}
