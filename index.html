@@ -17,7 +17,7 @@
 <body class="bg-white font-poppins">
   <!-- header -->
   <header class="top-0 left-0 w-[100%] px-[4%] py-[5px] flex justify-between items-center bg-black text-white z-50">
-    <a href="#" class="text-white flex items-center font-bold text-[1.5rem]">Rakib.</a>
+    <a href="#" class="text-white flex items-center font-bold text-[1.5rem] logo">Rakib.</a>
 
     <div class="flex md:hidden justify-end size-10 items-center">
       <i class="bx bx-menu text-2xl mr-3"></i>
@@ -34,7 +34,7 @@
   <!-- Home section -->
 
   <section
-    class="w-[100%] h-[100%] md:h-[100vh]  px-[9%] pb-[2rem] bg-black text-white flex items-center grid-cols-12 md:flex-row flex-col ">
+    class="w-[100%] h-[100%] md:h-[100vh]  px-[9%] pb-[2rem] bg-black text-white flex items-center grid-cols-12 md:flex-row flex-col activate">
     <div class="col-span-6 md:col-span-12 order-12 md:order-1 px-2">
       <h1 class="text-3xl py-2">Rakibul Islam</h1>
       <h2 class="text-2xl py-2" id="highlite">I'm a
@@ -410,7 +410,7 @@
 
   <!-- protfolio section -->
 
-  <section class="activate portfolio">
+  <section class=" portfolio">
     <h2 class="text-white text-[1.5rem] text-center mb-[3rem]">Latest <span class="text-green">Project</span></h2>
     <!-- portfolio container -->
 
@@ -465,19 +465,39 @@
         </div>
         <!-- portfolio detail -->
 
-        <div class="portfolio-detail">
+        <div class="portfolio-detail text-white">
           <p class="numb ">04</p>
+          <h3 class="heads">Frontend Project</h3>
+          <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, iure.</p>
+          
+          <div class="tech">
+            <p>HTML5, Tailwind, JavaScript</p>
+          </div>
+          <div class="live-github">
+            <a target="_blank" href="https://tailwindproject-02.netlify.app/" class="picon"><i class='bx bx-arrow-back'></i> <span>Live Project</span></a>
+            <a target="_blank" href="https://github.com/rakibulislam161363/tailwind-project-02" class="picon"><i class='bx bxl-github'></i><span>Github Repositary</span></a>
+          </div>
         </div>
         <!-- portfolio detail -->
 
-        <div class="portfolio-detail">
+        <div class="portfolio-detail text-white">
           <p class="numb ">05</p>
+          <h3 class="heads">Frontend Project</h3>
+          <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, iure.</p>
+          
+          <div class="tech">
+            <p>HTML5, CSS3</p>
+          </div>
+          <div class="live-github">
+            <a target="_blank" href="https://rakibulislam161363.github.io/html-Css-Project/" class="picon"><i class='bx bx-arrow-back'></i> <span>Live Project</span></a>
+            <a target="_blank" href="https://github.com/rakibulislam161363/html-Css-Project" class="picon"><i class='bx bxl-github'></i><span>Github Repositary</span></a>
+          </div>
         </div>
         <!-- portfolio detail -->
 
-        <div class="portfolio-detail">
+        <!-- <div class="portfolio-detail">
           <p class="numb ">06</p>
-        </div>
+        </div> -->
       </div>
 
       <div class="portfolio-box col-span-12 md:col-span-6">
@@ -497,16 +517,16 @@
             </div>
             <!-- 4 -->
             <div class="img-item">
-              <img src="/img/Black Thank You.png" alt="">
+              <img src="/img/Black Simple New Year Phone Wallpaper (1).png" alt="">
             </div>
             <!-- 5 -->
             <div class="img-item">
-              <img src="/img/Black Thank You.png" alt="">
+              <img src="/img/Black Simple New Year Phone Wallpaper (2).png" alt="">
             </div>
             <!-- 6 -->
-            <div class="img-item">
+            <!-- <div class="img-item">
               <img src="/img/Black Thank You.png" alt="">
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="navigation text-white">
@@ -514,6 +534,56 @@
           <button class="arrow-right"><i class="bx bx-chevron-right"></i></button>
         </div>
       </div>
+    </div>
+
+  </section>
+
+
+  <!-- contract section -->
+
+  <section class="text-white">
+    <div class="contract-container grid grid-cols-12 gap-5">
+
+      <div class="contract-box col-span-12 md:col-span-6">
+        <h2>Let's Work Together</h2>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aspernatur.</p>
+        <div class="contact-detail">
+          <i class="bx bxs-phone"></i>
+          <div class="detail">
+            <p>Phone</p>
+            <p>01874753366</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <i class="bx bxs-envelope"></i>
+          <div class="detail">
+            <p>Email</p>
+            <p>rakibulislam161363@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <i class="bx bxs-map"></i>
+          <div class="detail">
+            <p>Address</p>
+            <p>Khulna</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contract-box col-span-12 md:col-span-6">
+        <form action="">
+          <h2>Contact <span class="text-green">me!</span></h2>
+          <div class="field-box gap-2 grid grid-cols-12">
+            <input class="col-span-6" type="text" placeholder="Full Name" required>
+            <input class="col-span-6" type="email" placeholder="Email Address" required>
+            <input class="col-span-6" type="text" placeholder="Phone Number" required>
+            <input class="col-span-6" type="text" placeholder="Email Subject" required>
+            <textarea class="col-span-12" name="" id="" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="inline w-full items-center py-2 px-5 bg-green rounded-full mt-3 transition-all delay-100 shadow-green hover:bg-transparent hover:bg-black border-solid border-green text-black hover:text-white border-[1px]">Send Massage</button>
+        </form>
+      </div>
+
     </div>
 
   </section>

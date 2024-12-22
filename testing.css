@@ -277,3 +277,52 @@ section {
   background: #323946;
   color: #fff3;
 }
+.contract-box:first-child{
+  align-self: center;
+}
+
+.contract-box h2{
+  font-size: 2.25rem;
+}
+.contract-box p{
+  font-size: .9rem;
+}
+.contract-box .desc{
+  margin: .575rem 0 1.2rem;
+}
+.contract-box .contact-detail{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.contact-detail i{
+  display: inline-block;
+  background: #323946;
+  color: greenyellow;
+  font-size: 1.5rem;
+  padding: .6rem;
+  border-radius: .4rem;
+  margin-left: .75rem;
+}
+.contact-detail .detail p:first-child{
+  color: greenyellow;
+}
+.contract-box form{
+  background-color: #323946;
+  padding: 2rem 2rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.contract-box .field-box input,
+.contract-box .field-box textarea{
+  padding: .5rem;
+  background: black;
+  border: .15rem solid black;
+  border-radius: .6rem;
+  font-size: 1rem;
+  color: white;
+}
+.contract-box .field-box textarea{
+  height: 10rem;
+  resize: none;
+}

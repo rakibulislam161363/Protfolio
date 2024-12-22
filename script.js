@@ -1,3 +1,22 @@
+const navLinks = document.querySelectorAll("header nav a");
+const logoLink = document.querySelector('.logo');
+
+const activePage = () => {
+  navLinks.forEach(link => {
+    link.classList.remove('activate');
+  });
+}
+
+navLinks.forEach((link, inx) => {
+  link.addEventListener("click", () => {
+    if (!link.classList.contains("activate")) {
+      activePage();
+
+      link.classList.add("activate");
+    }
+  })
+});
+
 const resumsBtns = document.querySelectorAll(".btn");
 
 resumsBtns.forEach((button, idx) => {
@@ -15,6 +34,10 @@ resumsBtns.forEach((button, idx) => {
     resumaDetail[idx].classList.add("actived");
   });
 });
+
+logoLink.addEventListener("click", () => {
+  if(!navLinks[0].classList.contains("actived"))
+})
 
 
 const arrowRight = document.querySelector('.arrow-right');
@@ -39,12 +62,14 @@ const activePortfolio = () => {
   portfolioDetails[index].classList.add('portfolio-active');
 }
 arrowRight.addEventListener("click", () => {
-  if (index < 4) {
+  // project barali akhana 3 ar bodla ja koita project barba sai koi ta hoba
+  if (index < 3) {
     index++;
     arrowLeft.classList.remove("disabled");
   }
   else {
-    index = 5;
+    // akhanaw o barba ak kora
+    index = 4;
     arrowRight.classList.add('disabled');
   }
   activePortfolio();
