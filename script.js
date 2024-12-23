@@ -1,19 +1,56 @@
 const navLinks = document.querySelectorAll("header nav a");
 const logoLink = document.querySelector('.logo');
+const sections = document.querySelectorAll("section");
+const menuIcon = document.querySelector('#menu-icon');
+const navBar = document.querySelector("header nav");
+
+
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("bx-x");
+  navBar.classList.toggle("bars")
+});
 
 const activePage = () => {
+
+  const header = document.querySelector('header');
+  const barsBox = document.querySelector('.bars-box');
+
+
+  header.classList.remove('active');
+  setTimeout(() => {
+    header.classList.add('active');
+  }, 1100);
+
   navLinks.forEach(link => {
-    link.classList.remove('activate');
+    link.classList.remove('active');
   });
+
+  barsBox.classList.remove('activate');
+  setTimeout(() => {
+    barsBox.classList.add('activate');
+  }, 1100);
+
+
+  sections.forEach(section => {
+    section.classList.remove('activate');
+  });
+  menuIcon.classList.remove('bx-x');
+  navBar.classList.remove('bars');
 }
 
 navLinks.forEach((link, inx) => {
   link.addEventListener("click", () => {
-    if (!link.classList.contains("activate")) {
+    if (!link.classList.contains("active")) {
+
       activePage();
 
-      link.classList.add("activate");
-    }
+      link.classList.add("active");
+
+
+      setTimeout(() => {
+        sections[inx].classList.add('activate');
+      }, 1100);
+    };
   })
 });
 
@@ -36,8 +73,15 @@ resumsBtns.forEach((button, idx) => {
 });
 
 logoLink.addEventListener("click", () => {
-  if(!navLinks[0].classList.contains("actived"))
-})
+  if (!navLinks[0].classList.contains("active")) {
+    activePage();
+    navLinks[0].classList.add("active");
+
+    setTimeout(() => {
+      sections[0].classList.add('activate');
+    }, 1100);
+  };
+});
 
 
 const arrowRight = document.querySelector('.arrow-right');

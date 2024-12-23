@@ -16,14 +16,16 @@
 
 <body class="bg-white font-poppins">
   <!-- header -->
-  <header class="top-0 left-0 w-[100%] px-[4%] py-[5px] flex justify-between items-center bg-black text-white z-50">
-    <a href="#" class="text-white flex items-center font-bold text-[1.5rem] logo">Rakib.</a>
-
-    <div class="flex md:hidden justify-end size-10 items-center">
-      <i class="bx bx-menu text-2xl mr-3"></i>
+  <header class="top-0 left-0 w-[100%] px-[4%] py-[5px] flex md:justify-between items-center bg-black text-white z-50 animate flex-col md:flex-row mx-auto ">
+    <div class=" md:px-[7%] flex justify-between mx-auto">
+      <a href="#" class="text-white flex items-center ml-[-100%] font-bold text-[1.5rem] logo">Rakib.</a>
+      
+      <div class="flex md:hidden justify-end size-10 items-center mr-[-100%]">
+        <i class="bx bx-menu text-2xl mr-3 text-white" id="menu-icon"></i>
+      </div>
     </div>
-    <nav class="md:flex hidden items-center">
-      <a href="#" class=" ml-[2.5rem] hover:text-green transition-all delay-75 active: text-green">Home</a>
+    <nav class="md:flex items-center text-center">
+      <a href="#" class=" ml-[2.5rem] hover:text-green text-white transition-all delay-75 active">Home</a>
       <a href="#" class=" text-white ml-[2.5rem] hover:text-green transition-all delay-75">Services</a>
       <a href="#" class=" text-white ml-[2.5rem] hover:text-green transition-all delay-75">Resume</a>
       <a href="#" class=" text-white ml-[2.5rem] hover:text-green transition-all delay-75">Portfolio</a>
@@ -31,10 +33,22 @@
     </nav>
   </header>
 
+
+  <!-- bars box -->
+
+  <div class="bars-box activate">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+  </div>
+
   <!-- Home section -->
 
   <section
-    class="w-[100%] h-[100%] md:h-[100vh]  px-[9%] pb-[2rem] bg-black text-white flex items-center grid-cols-12 md:flex-row flex-col activate">
+    class="w-[100%] h-[100%] md:h-[100vh]  px-[9%] pb-[2rem] text-white flex items-center grid-cols-12 md:flex-row flex-col activate">
     <div class="col-span-6 md:col-span-12 order-12 md:order-1 px-2">
       <h1 class="text-3xl py-2">Rakibul Islam</h1>
       <h2 class="text-2xl py-2" id="highlite">I'm a
@@ -580,7 +594,7 @@
             <input class="col-span-6" type="text" placeholder="Email Subject" required>
             <textarea class="col-span-12" name="" id="" placeholder="Your Message" required></textarea>
           </div>
-          <button type="submit" class="inline w-full items-center py-2 px-5 bg-green rounded-full mt-3 transition-all delay-100 shadow-green hover:bg-transparent hover:bg-black border-solid border-green text-black hover:text-white border-[1px]">Send Massage</button>
+          <button type="submit" class="inline items-center py-2 px-5 bg-green rounded-full mt-3 transition-all delay-100 shadow-green hover:bg-transparent hover:bg-black border-solid border-green text-black hover:text-white border-[1px]">Send Massage</button>
         </form>
       </div>
 
